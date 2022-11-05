@@ -69,11 +69,6 @@ int isButtonPress(int index){
 	}
 	return 0;
 }
-int isButtonPress3s(int index){
-	if(index >= NUM_OF_BUTTON) return 0;
-	return (flagForButtonPress3s[index] == 1);
-}
-
 int ResetButtonIsPressed(){
 	return isButtonPress(0);
 }
@@ -82,10 +77,4 @@ int IncButtonIsPressed(){
 }
 int DecButtonIsPressed(){
 	return isButtonPress(2);
-}
-int IncButtonIsPressed3s(){
-	return isButtonPress3s(1);
-}
-int DecButtonIsPressed3s(){
-	return isButtonPress3s(2);
 }

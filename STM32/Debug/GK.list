@@ -27,23 +27,23 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   ALLOC
  11 .ARM.attributes 00000029  00000000  00000000  00020048  2**0
                   CONTENTS, READONLY
- 12 .debug_info   00008e81  00000000  00000000  00020071  2**0
+ 12 .debug_info   00008e2b  00000000  00000000  00020071  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 13 .debug_abbrev 000019a0  00000000  00000000  00028ef2  2**0
+ 13 .debug_abbrev 000019a0  00000000  00000000  00028e9c  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 14 .debug_aranges 00000a10  00000000  00000000  0002a898  2**3
+ 14 .debug_aranges 000009f8  00000000  00000000  0002a840  2**3
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 15 .debug_ranges 00000910  00000000  00000000  0002b2a8  2**3
+ 15 .debug_ranges 000008f8  00000000  00000000  0002b238  2**3
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 16 .debug_macro  000169e8  00000000  00000000  0002bbb8  2**0
+ 16 .debug_macro  000169e8  00000000  00000000  0002bb30  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 17 .debug_line   0000afca  00000000  00000000  000425a0  2**0
+ 17 .debug_line   0000af75  00000000  00000000  00042518  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 18 .debug_str    00081f7e  00000000  00000000  0004d56a  2**0
+ 18 .debug_str    00081f44  00000000  00000000  0004d48d  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 19 .comment      00000053  00000000  00000000  000cf4e8  2**0
+ 19 .comment      00000053  00000000  00000000  000cf3d1  2**0
                   CONTENTS, READONLY
- 20 .debug_frame  000027bc  00000000  00000000  000cf53c  2**2
+ 20 .debug_frame  0000275c  00000000  00000000  000cf424  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
 
 Disassembly of section .text:
@@ -1156,11 +1156,6 @@ int isButtonPress(int index){
  80007e4:	20000064 	.word	0x20000064
 
 080007e8 <ResetButtonIsPressed>:
-int isButtonPress3s(int index){
-	if(index >= NUM_OF_BUTTON) return 0;
-	return (flagForButtonPress3s[index] == 1);
-}
-
 int ResetButtonIsPressed(){
  80007e8:	b580      	push	{r7, lr}
  80007ea:	af00      	add	r7, sp, #0
